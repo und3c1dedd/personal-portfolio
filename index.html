@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frenz Francisco - Portfolio</title>
+    <link rel="icon" href="pics/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="stylepw.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="hamburger" id="hamburger" onclick="toggleNavbar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <img src="pics/logo.png" alt="Logo" />
+                <span>FCSF</span>
+            </div>
+            <ul id="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero section">
+            <div class="text-content">
+                <h2>Hi, I'm</h2>
+                <h1>Frenz Francisco</h1>
+                <p>Information Technology Student</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+            <div class="image-content">
+                <img src="pics/ff.png" alt="Frenz Francisco" class="profile-image">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="pics/frenz.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="info-content">
+                    <p>I am Frenz Carl S. Francisco, a passionate IT student currently pursuing my Bachelor's in Information Technology at Nueva Ecija University of Science and Technology. While I initially had no particular interest in this field, 
+                        I have since discovered a strong interest for web development. This area excites me because it combines creativity with
+                        technical skills, allowing me to build interactive and dynamic digital experiences.</p>
+                    <br>
+                    <p><strong>Born:</strong> MAY 31 2004</p>
+                    <p><strong>Age:</strong> 20</p>
+                    <p><strong>Living In:</strong> Brgy. Entablado, Cabiao, Nueva Ecija, Philippines.</p>
+                    <h3>Educational Background</h3>
+                    <ul id="education-list">
+                        <li>Bachelor of Science in Information Technology - 2nd Year, Nueva Ecija University of Science and Technology</li>
+                        <li>Senior High School - Holy Rosary Colleges Foundation</li>
+                        <li>High School - Holy Rosary Colleges Foundation</li>
+                        <li>Grade School - Holy Rosary Colleges Foundation</li>
+                    </ul>
+                </div>
+            </div>
+            <h3 class="h3m">My Skills</h3>
+                <div class="skills-graph">
+                    <div class="skill-bar">
+                        <i class="fab fa-html5 skill-icon html"></i> <!-- HTML icon with hover color -->
+                        <span class="skill-title">HTML</span>
+                        <div class="bar">
+                            <div class="fill mid"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <i class="fab fa-css3-alt skill-icon css"></i> <!-- CSS icon with hover color -->
+                        <span class="skill-title">CSS</span>
+                        <div class="bar">
+                            <div class="fill mid"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <i class="fab fa-js-square skill-icon js"></i> <!-- JavaScript icon with hover color -->
+                        <span class="skill-title">JavaScript</span>
+                        <div class="bar">
+                            <div class="fill low-js"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <i class="fab fa-java skill-icon java"></i> <!-- Java icon with hover color -->
+                        <span class="skill-title">Java</span>
+                        <div class="bar">
+                            <div class="fill low-java"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <i class="fab fa-cuttlefish skill-icon cpp"></i> <!-- C++ icon with hover color -->
+                        <span class="skill-title">C++</span>
+                        <div class="bar">
+                            <div class="fill low-c"></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    
+        <div id="projects">
+            <h2 class="h2d">Project</h2>
+            <p>Business Website in ITWS-01</p>
+            <div class="project-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="pics/bigd.png" alt="Project Preview">
+                    </div>  
+                    <a href="https://und3c1dedd.github.io/bigdonut/" class="project-link">View More</a>
+                </div>
+            </div>
+        </div>
+        
+        <section id="contact" class="section">
+            <h2 class="h2c">Contact Me</h2>
+            <div class="contact-container">
+                <!-- Contact Form on the Left -->
+                <form id="contact-form" action="submit_form.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            
+                <!-- Contact Info on the Right -->
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:franciscofrenzcarl@gmail.com">franciscofrenzcarl@gmail.com</a></p>
+                    <p><strong>Phone:</strong> 09928454196</p>
+                    <p><strong>Address:</strong> Brgy. Entablado, Cabiao, Nueva Ecija, Philippines</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/und3c1dedd" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/frenzcarl.francisco31" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/perens_francisco/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/frenz-francisco-766836339/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 <a href="https://www.facebook.com/frenzcarl.francisco31">Frenz Carl S. Francisco</a><a href="https://www.facebook.com/icemark15">, Mark Ice Delos Santos</a>. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="pw.js"></script>
+</html>
